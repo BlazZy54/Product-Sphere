@@ -8,7 +8,7 @@ const HomePage = ({showProduct, setshowProduct }) => {
   const {theme} = useTheme()
 
   return (
-    <div className={theme === 'dark' ? 'bg-[#0f172a]' : 'bg-white'}>
+    <div className={`${theme === 'dark' ? 'bg-[#0f172a]' : 'bg-white'} justify-center relative right-15`}>
       <div>{showProduct ? <ShowProduct setshowProduct={setshowProduct} /> : <CreateProduct />}</div>
     </div>
   )
