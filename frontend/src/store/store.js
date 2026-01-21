@@ -11,7 +11,7 @@ export const useProductStore = create((set) => ({
             return {success: false, message: "Please fill in all the fields"}
         }
         
-        const res = await fetch("http://localhost:3000/api/products", {
+        const res = await fetch("/api/products", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -27,14 +27,14 @@ export const useProductStore = create((set) => ({
     },
 
     getProducts: async () => {
-        const res = await fetch('http://localhost:3000/api/products')
+        const res = await fetch('/api/products')
         const JSobj = await res.json()
         set({products: JSobj.products})
         console.log("Products fetched successfully")
     },
 
     deleteProduct: async (_id) => {
-        const res = await fetch(`http://localhost:3000/api/products/${_id}`, {method: "DELETE"})
+        const res = await fetch(`/api/products/${_id}`, {method: "DELETE"})
         const data = await res.json()
 
         if(!data.status) return {success: false, message: data.message}
@@ -45,7 +45,7 @@ export const useProductStore = create((set) => ({
 
     updateProduct: async (_id, updatedProduct) => {
         
-        const res = await fetch(`http://localhost:3000/api/products/${_id}`, {
+        const res = await fetch(`/api/products/${_id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"
