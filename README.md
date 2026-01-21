@@ -76,6 +76,15 @@ The ProductSphere allows users to:
 ![RESPONSIVE](/images/image6.png)
 
 ---
+## Commands to run during Deployment
+### for build
+```
+npm run build
+```
+### for start
+```
+npm run start
+```
 
 ## 📝 License
 
