@@ -74,8 +74,11 @@ The ProductSphere allows users to:
 ![LIGHT MODE UI](/images/image4.png)
 ![TOAST](/images/image5.png)
 ![RESPONSIVE](/images/image6.png)
-
 ---
+
+## Deployed:
+![DEPLOYED](/images/image7.png)
+
 ## Commands to run during Deployment
 ### for build
 ```
