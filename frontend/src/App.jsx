@@ -9,7 +9,7 @@ function App() {
   const {theme} = useTheme()
 
   return (
-    <div className={`${theme == 'dark' ? 'bg-[#0f172a]' : 'bg-w'} w-full h-screen`}>
+    <div className={`${theme == 'dark' ? 'bg-[#0f172a]' : 'bg-w'} w-full h-screen flex flex-col`}>
       <Toaster position="bottom-right" />
       <Navbar setshowProduct={setshowProduct}/>
       <HomePage showProduct={showProduct} setshowProduct={setshowProduct}/>
